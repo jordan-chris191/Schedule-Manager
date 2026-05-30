@@ -94,8 +94,9 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
+            'schema' => 'public',
             'prefix_indexes' => true,
-            'search_path' => 'public',
+            'search_path' => 'public, laravel',
             'sslmode' => env('DB_SSLMODE', 'prefer'),
         ],
 
